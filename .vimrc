@@ -1,6 +1,15 @@
 " Execute a pathogen responsible for plugin loading
 execute pathogen#infect()
 
+let mapleader = ',' "Define ',' as leader key
+
+"Buffer management {
+nmap <leader>l :bnext<CR>
+nmap <leader>h :bprevious<CR>
+nmap <leader>c :bdelete<CR>
+nmap <leader>s :w<CR>
+" }
+
 "Disable arrow keys {
 map <up> <nop>
 map <down> <nop>
@@ -39,6 +48,7 @@ set mouse=a         "Enable mouse
 
 "Ctrl-P configuration {
 let g:ctrlp_max_depth = 40  "Set maximum depth of a directory tree
+let g:ctrlp_max_files = 0   "Set no limit for number of scaned files
 " }
 
 "NERDTree configuration {
