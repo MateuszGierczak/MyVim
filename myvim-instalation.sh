@@ -15,5 +15,5 @@ git clone https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcomm
 #Airline fonts installation
 git clone https://github.com/powerline/fonts.git ~/fonts
 
-./fonts/install.sh
+bash ~/fonts/install.sh
 rm -rf ~/fonts
