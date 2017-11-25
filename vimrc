@@ -1,6 +1,8 @@
 " Execute a pathogen responsible for plugin loading
 execute pathogen#infect()
 
+syntax on
+
 let mapleader = ',' "Define ',' as leader key
 
 "Buffer management {
@@ -44,6 +46,7 @@ set showmatch       "Show matching parenthesis
 set scrolloff=5     "Set option which determine number of context lines you
                     "would like to see above/below the cursor
 set mouse=a         "Enable mouse
+set noswapfile      "Disable creating .swp files
 " }
 
 "Ctrl-P configuration {
