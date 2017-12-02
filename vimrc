@@ -8,8 +8,15 @@ let mapleader = ',' "Define ',' as leader key
 "Buffer management {
 nmap <leader>l :bnext<CR>
 nmap <leader>h :bprevious<CR>
-nmap <leader>c :bdelete<CR>
+nmap <leader>c :bprevious\|bdelete # <CR>
 nmap <leader>s :w<CR>
+" }
+
+"Easy window navigation {
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 " }
 
 "Disable arrow keys {
@@ -47,6 +54,7 @@ set scrolloff=5     "Set option which determine number of context lines you
                     "would like to see above/below the cursor
 set mouse=a         "Enable mouse
 set noswapfile      "Disable creating .swp files
+set nowrap          "Disable line wrapping
 " }
 
 "Ctrl-P configuration {
