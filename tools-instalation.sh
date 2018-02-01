@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Vim installation
-sudo apt-get install vim
+sudo apt-get install vim tmux
 
 #Vim plugin installation
 git clone https://github.com/tpope/vim-pathogen.git ~/.vim/
@@ -14,7 +14,7 @@ git clone https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcomm
 wget -nc https://raw.githubusercontent.com/powerline/fonts/master/DejaVuSansMono/DejaVu%20Sans%20Mono%20for%20Powerline.ttf -P ~/.local/share/fonts
 
 #Create link to vim configuration
-ln -sf ~/vim_config/vim.conf ~/.vimrc
+ln -sf ~/tool_configs/vim.conf ~/.vimrc
 
 #Create link to tmux configuration
-ln -sf ~/vim_config/tmux.conf ~/.tmux.conf
+ln -sf ~/tool_configs/tmux.conf ~/.tmux.conf
